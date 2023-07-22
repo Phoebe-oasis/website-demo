@@ -2,10 +2,9 @@
   "name": "will-it-miss",
   "version": "1.0.0",
   "description": "A simple test for using npm to set up parcel, prettier and other tools, and finally deploy on netlify",
-  "source": "src/index.html",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel build src/index.html"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
