@@ -2,14 +2,15 @@
   "name": "will-it-miss",
   "version": "1.0.0",
   "description": "A simple test for using npm to set up parcel, prettier and other tools, and finally deploy on netlify",
-
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/nasa-feed.test.js",
+    "build": "npm run test && parcel build src/index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "axios": "^1.4.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^8.45.0",
     "eslint-plugin-react": "^7.33.0",
@@ -28,7 +29,7 @@
     "react-async-hook": "^4.0.0",
     "react-dom": "^18.2.0"
   },
-"@parcel/transformer-css": {
+  "@parcel/transformer-css": {
     "drafts": {
       "nesting": true
     }
